@@ -1,0 +1,122 @@
+/* 1 */
+:root {
+  --font-color: #333;
+  --caja-trabajo: #fff;
+  --texto-caja-titulo: #111;
+  --texto-caja-descripcion: #444;
+  --logo: url("logo-normal.svg");
+  --fondo-card: #fff;
+  --texto-card: #212529;
+  --item-navegador: #00000088;
+  --intro: linear-gradient(90deg, rgba(21,57,84,1) 0%, rgba(51,154,153,1) 60%);
+}
+
+/* 2 */
+[data-theme="dark"] {
+  --font-color: #eee;
+  --background-color: #0d2538;
+  --link-color: lightblue;
+  --redsocial-twitter: #fff;
+  --redsocial-linkedin: #fff;
+  --redsocial-instagram: #fff;
+  --redsocial-behance: #fff;
+  --redsocial-twitch: #fff;
+  --redsocial-email: #fff;
+  --caja-trabajo: #153954;
+  --texto-caja-descripcion: #fff;
+  --texto-caja-titulo: #fff;
+  --logo: url("logo-normal-dark.svg");
+  --biografia: #fff;
+  --fondo-card: #153954;
+  --texto-card: #fff; 
+  --item-navegador: #fff;
+  --toggle-menu: #fff;
+  --sidebarcolor: #339a99;
+  --sidebarcolor2: #019593; 
+  --intro: linear-gradient(90deg, rgba(51,154,153,1) 0%, rgba(87,221,211,1) 100%);
+}
+
+.MuiSvgIcon-root .MuiSvgIcon-fontSizeMedium .MuiSelect-icon .MuiSelect-iconStandard .css-pqjvzy-MuiSvgIcon-root-MuiSelect-icon {
+  color: var(--item-navegador);
+}
+
+.nav-item .nav-link, .form-select {
+  color: var(--item-navegador);
+}
+.togglemenu {
+  color: var(--toggle-menu);
+}
+/* 3 */
+/* body {
+    color: var(--font-color);
+  }
+  
+  a {
+    color: var(--link-color);
+  } */
+
+
+
+/* Custom Dark Mode Toggle Element */
+.toggle-theme-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+.toggle-theme-wrapper span {
+  font-size: 28px;
+}
+
+.toggle-theme {
+  position: relative;
+  display: inline-block;
+  /* height: 34px; */
+  /* width: 60px; */
+  color: rgba(0, 0, 0, 0.55);
+}
+
+.toggle-theme input {
+  display: none;
+}
+
+
+
+.slider {
+  background-color: #ccc;
+  position: absolute;
+  cursor: pointer;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  transition: 0.2s;
+}
+
+.slider:before {
+  background-color: #fff;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: 0.4s;
+  width: 26px;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+input:checked + .slider {
+  background-color: cornflowerblue;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
